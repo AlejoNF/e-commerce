@@ -1,0 +1,34 @@
+.similar__container{
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+.similar__title{
+    margin-top: 10px;
+    color:#F85555;
+    text-align: center;
+}
+
+.similar__title{
+    margin-top: 10px;
+}
+.similar__card{
+    margin: 15px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+@media (min-width:768px){
+    .product__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    .similar__container{
+        grid-column-start: 1;
+        grid-column-end: span 2;
+    }
+    
+}

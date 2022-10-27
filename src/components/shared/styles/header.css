@@ -1,0 +1,33 @@
+.header{
+    border: 1px solid #ccc;
+    display:flex;
+    
+}
+.header__title{
+    font-size: large;
+   
+    
+}
+.header__title-name{
+    margin-left: 10px;
+    color:  #F85555 ;
+}
+.header__nav{
+    display:flex;
+}
+
+
+.header__list{
+    display: flex;
+    margin-left: auto;
+}
+.header__item{
+    border: 1px solid #ccc;
+    width: 35px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 2px;
+}
+.header__link{
+    color: #aaa; 
+}

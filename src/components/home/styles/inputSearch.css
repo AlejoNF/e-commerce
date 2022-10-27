@@ -1,0 +1,13 @@
+.input__container{
+    display: flex;
+    justify-content: center;
+    
+}
+.input{
+    border: 2px solid #aaa;
+    margin: 15px;
+    border-radius: 6px;
+    text-align: center;
+    width: 40%;
+    height: 30px;
+}

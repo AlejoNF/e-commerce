@@ -1,0 +1,45 @@
+.purchase__container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    border: 1px solid rgb(93, 93, 93);
+    border-radius: 8px;
+    margin: 15px;
+    
+}
+.purchases__title{
+    margin-left: 50px;
+    color:grey ;
+}
+.purchase__date{
+    border: 1px solid black;
+    border-radius: 8px;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    margin: 15px;
+    padding: 5px;
+    font-weight: 900;
+}
+.purchase__info{
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    margin: 5px;
+}
+.purchase__card{
+    border: 1px solid rgb(109, 122, 141);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 15px;
+    padding: 5px;
+}
+
+.purchase__quantity{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #aaa;
+}
+
+.purchase__price{
+    display: flex;
+    justify-content: center;
+}
