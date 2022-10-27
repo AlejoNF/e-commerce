@@ -1,0 +1,6 @@
+.order__btn{
+    background-color: var(--bg-color-red);
+    color:white;
+    cursor: pointer;
+
+}

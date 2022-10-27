@@ -12,17 +12,17 @@ const Header = () => {
         <ul className="header__list">
           <li className="header__item">
             <NavLink className="header__link" to='/login'>
-            <i class="fa-regular fa-user"></i>
+            <i className="fa-regular fa-user"></i>
             </NavLink>
           </li>
           <li className="header__item">
             <NavLink className="header__link" to='/purchases'>
-            <i class="fa-solid fa-box"></i>
+            <i className="fa-solid fa-box"></i>
             </NavLink>
           </li>
           <li className="header__item">
             <NavLink className="header__link" to='/cart'>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i className="fa-solid fa-cart-shopping"></i>
             </NavLink>
           </li>
         </ul>
