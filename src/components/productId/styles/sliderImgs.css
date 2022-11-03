@@ -1,6 +1,11 @@
 .slider {
   padding: 20px 50px;
   position: relative;
+  margin: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
 }
 .slider__static {
   width: 100%;
@@ -41,6 +46,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+  
 }
 
 @media (max-width:768px){

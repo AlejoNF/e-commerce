@@ -39,9 +39,12 @@ const Home = () => {
   return (
     <main className="home">
       <InputSearch inputText={inputText} setInputText={setInputText} />
+      <div className="home__filters">
       <FilterPrice setFilterByPrice = {setFilterByPrice}/>
       <FilterCategory/>
       <OrderByPrice/>
+      </div>
+      
       <div className="home__container">
         {
             filterByText?.filter(callBackFilterPrice).map(product=>(

@@ -35,9 +35,9 @@ const LoginScreen = () => {
     if(isLogged){
         return (
             <div className='isLogged'>
-               <h2>User logged ✔</h2> 
-               <button onClick={handleLogOut}>
-                LogOut
+               <h2 className='isLogged__label'>User logged &nbsp;✔</h2> 
+               <button className='isLogged__btn' onClick={handleLogOut}>
+                Log Out
                </button>
             </div>
             

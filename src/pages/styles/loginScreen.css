@@ -1,11 +1,12 @@
 .login__container{
     display: flex;
     border: 1px solid red;
+    height: 80vh;
     
 }
 .login__form{
+    
     margin: auto;
-    margin-top: 20%;
     padding: 15px;
     width: 50%;
     border: 2px solid #cbb0b0 ;
@@ -13,10 +14,9 @@
 }
 .login__title{
     color: rgb(167, 167, 167);
+    font-size: larger;
+    
 }
-
-
-
 .login__label{
     margin: 5px;
     font-weight: 500;
@@ -40,5 +40,32 @@
     justify-content: center;
     align-items: center;
     margin-left: 10%;
+    color: white;
+}
+
+.isLogged{
+    border: 3px solid rgb(72, 132, 73);
+    border-radius: 8px;
+    padding: 5px;
+    margin: auto;
+    
+    width: 70%;
+    
+    
+}
+.isLogged__label{
+    padding: 8px;
+    color:rgb(61, 194, 63);
+    text-align: center;
+    
+    
+}
+
+.isLogged__btn{
+    background-color: rgb(218, 115, 90);
+    border-radius: 8px;
+    width: 100%;
+    height: 25px;
+    margin: auto ;
     color: white;
 }

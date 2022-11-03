@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { ascendingProducts, descendingProducts } from '../../store/slices/products.slice'
+import './styles/orderByPrice.css'
 
 const OrderByPrice = () => {
     const dispatch = useDispatch()
@@ -14,10 +15,13 @@ const OrderByPrice = () => {
     }
 
   return (
-    <div>
-        <h3>Order</h3>
-        <button onClick={handleAscending} className='order__btn'>Ascending ⬆</button>
-        <button onClick={handleDescencindg} className='order__btn'>Descending ⬇</button>
+    <div className='order-price__container'>
+        <h3 className='order-price__title'>Order</h3>
+       
+        <button className='order-price__btn' onClick={handleAscending} >Ascending ⬆</button>
+        <button className='order-price__btn' onClick={handleDescencindg} >Descending ⬇</button>
+        
+        
     </div>
   )
 }

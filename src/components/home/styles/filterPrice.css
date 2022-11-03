@@ -1,0 +1,33 @@
+.filter-price__form{
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin: 3px;
+    width: 100%;
+    max-width: 400px;
+}
+.filter-price__title{
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+.filter-price-contains{
+    
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+.filter-price__btn{
+    border-radius: 8px;
+    width: 80%;
+    height: 25px;
+    background-color:  #F85555;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    color: white;
+    
+}
