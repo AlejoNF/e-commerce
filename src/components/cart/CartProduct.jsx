@@ -18,13 +18,17 @@ const CartProduct = ({product}) => {
   }
 
   return (
-    <article className='cart-p'>
-        <h2>{product.title}</h2>
-        <ul>
-            <li><span>Price</span>{product.price}</li>
-            <li><span>Quantity</span>{product.productsInCart.quantity}</li>
+    <article className='cart-product'>
+        <h2 className='cart-product__title'>{product.title}</h2>
+        <ul className='cart-product__list'>
+            <li className='cart-product__item'><span className='cart-product__span'>Price</span>{product.price}</li>
+            <li className='cart-product__item'><span className='cart-product__span'>Quantity</span>{product.productsInCart.quantity}</li>
         </ul>
-        <button onClick={handleDelete} className='cart-p__btn'><i className="cart-p__icon fa-regular fa-trash-can"></i></button>
+
+        <div className='btn-container'>
+        <button  onClick={handleDelete} className='cart-product__btn'><i className="cart-product__icon fa-regular fa-trash-can"></i></button>
+        </div>
+        
 
         {/* <p>{product.description}</p> */}
     </article>

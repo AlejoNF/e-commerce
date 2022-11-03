@@ -34,12 +34,15 @@ const LoginScreen = () => {
 
     if(isLogged){
         return (
+            <div className='isLogged-container'>
             <div className='isLogged'>
                <h2 className='isLogged__label'>User logged &nbsp;✔</h2> 
                <button className='isLogged__btn' onClick={handleLogOut}>
                 Log Out
                </button>
             </div>
+            </div>
+            
             
         ) 
     }

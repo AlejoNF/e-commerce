@@ -42,7 +42,13 @@
     margin-left: 10%;
     color: white;
 }
-
+.isLogged-container{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
 .isLogged{
     border: 3px solid rgb(72, 132, 73);
     border-radius: 8px;
@@ -50,22 +56,23 @@
     margin: auto;
     
     width: 70%;
+    height: 150px;
     
     
 }
 .isLogged__label{
+    margin: 5px;
+    margin-bottom: 25px;
     padding: 8px;
     color:rgb(61, 194, 63);
-    text-align: center;
-    
-    
+    text-align: center; 
 }
 
 .isLogged__btn{
     background-color: rgb(218, 115, 90);
     border-radius: 8px;
     width: 100%;
-    height: 25px;
+    height: 45px;
     margin: auto ;
     color: white;
 }
