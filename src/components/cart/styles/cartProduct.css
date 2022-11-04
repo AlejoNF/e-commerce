@@ -1,9 +1,14 @@
 
 .cart-product{
     border: 1px solid #ccc;
-    margin: 5px;
+    border-radius: 8px;
+    margin: 5px auto;
     padding: 8px;
+    width: 40%;
     
+}
+.cart-product__list{
+    display: flex;
 }
 .cart-product__title{
     display: flex;
@@ -12,10 +17,14 @@
 
 
 .cart-product__item{
+    width: 60%;
     margin:15px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
     
 }
 .cart-product__span{
@@ -23,6 +32,7 @@
     padding: 8px;
     border-radius: 4px;
     margin-right: 15px;
+   
 }
 
 .cart-product__icon{
@@ -30,13 +40,14 @@
 }
 .btn-container{
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 .cart-product__btn{
     background-color: var(--bg-color-red);
     cursor: pointer;
     border-radius: 4px;
-    width: 50%;
+    width: 10%;
     height: 40px;
+    margin: 15px;
     
 }

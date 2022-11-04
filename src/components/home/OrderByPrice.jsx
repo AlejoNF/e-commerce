@@ -18,8 +18,11 @@ const OrderByPrice = () => {
     <div className='order-price__container'>
         <h3 className='order-price__title'>Order</h3>
        
-        <button className='order-price__btn' onClick={handleAscending} >Ascending ⬆</button>
+       <div className='order-price__box'>
+       <button className='order-price__btn' onClick={handleAscending} >Ascending ⬆</button>
         <button className='order-price__btn' onClick={handleDescencindg} >Descending ⬇</button>
+        
+       </div>
         
         
     </div>

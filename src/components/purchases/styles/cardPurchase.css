@@ -5,12 +5,13 @@
     border-radius: 8px;
     margin: 15px;
     background-color: rgb(226, 234, 241);
-    
-    
+    width: 60%;    
+    margin: 15px auto;
 }
 .purchases__title{
     margin-left: 50px;
     color:grey ;
+    font-weight: 900;
 }
 .purchase__date{
     border: 1px solid black;
@@ -20,6 +21,7 @@
     margin: 15px;
     padding: 5px;
     font-weight: 900;
+    background-color: white;
 }
 .purchase__info{
     grid-column-start: 1;
@@ -34,6 +36,8 @@
     grid-template-columns: repeat(3,1fr);
     margin: 15px;
     padding: 5px;
+    
+    background-color: white;
 }
 
 .purchase__quantity{

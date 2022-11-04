@@ -25,7 +25,11 @@ const FilterPrice = ({setFilterByPrice}) => {
         <label className='filter-price__label' htmlFor="to">To</label>
         <input className='filter-price__input' type="number" id='to' />
       </div>
+
+      <div className='filter-price__box'>
       <button className='filter-price__btn'>Filter</button>
+      </div>
+      
     </form>
 
   )
