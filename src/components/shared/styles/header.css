@@ -1,12 +1,16 @@
 .header{
     border: 1px solid #ccc;
     display:flex;
-    
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+.header__dark{
+    position: relative;
+    z-index: 10;
 }
 .header__title{
     font-size: large;
-   
-    
 }
 .header__title-name{
     margin-left: 10px;
@@ -20,9 +24,11 @@
 .header__list{
     display: flex;
     margin-left: auto;
+    gap:10px;
+    margin-right: 20px;
 }
 .header__item{
-    border: 1px solid #ccc;
+    
     width: 35px;
     padding: 3px;
     text-align: center;

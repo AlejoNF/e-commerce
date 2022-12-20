@@ -1,3 +1,8 @@
+.cart{
+    height: 100vh;
+    width: 100%;
+
+}
 .cart-total__container{
     border:1px solid #ccc;
     margin:5px;

@@ -4,8 +4,9 @@ import { useParams } from 'react-router-dom'
 import ProductInfo from '../components/productId/ProductInfo';
 import SimilarProducts from '../components/productId/SimilarProducts'
 import SliderImgs from '../components/productId/SliderImgs';
+import Cart from './Cart';
 import './styles/productId.css'
-const ProductId = () => {
+const ProductId = ({isOpen}) => {
   const [product, setProduct] = useState()
   const {id} = useParams()
 useEffect(() => {
@@ -17,7 +18,13 @@ useEffect(() => {
   .catch(err => console.log(err))
 }, [id])
   return (
+    
     <div className='product__container'>
+
+      <div className={`home__cart ${isOpen ? "home__cart-shown" : '' } `}>
+        <Cart/>
+      </div>
+
       <div className='product__slider'>
       {
         product && <SliderImgs product = {product}/>

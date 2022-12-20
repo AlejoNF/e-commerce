@@ -10,6 +10,7 @@ import axios from 'axios'
 import LoginScreen from './pages/LoginScreen'
 import getConfig from './utils/getConfig'
 import Header from './components/shared/Header'
+import { useState } from 'react'
 
 function App() {
   // useEffect(() => {
@@ -36,17 +37,23 @@ function App() {
     .catch(err => console.log(err))
   },[])
 
+  const [isOpen, setIsOpen] = useState(false)
+
+  const [isDark, setIsDark] = useState(false)
+
   return (
     <div className="App">
-      <Header/>
+      <Header isDark = {isDark} setIsDark = {setIsDark}
+              isOpen = {isOpen} setIsOpen= {setIsOpen}
+              />
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/product/:id' element={<ProductId/>}/>
+        <Route path='/' element={<Home isOpen = {isOpen} isDark = {isDark}/>}/>
+        <Route path='/product/:id' element={<ProductId isOpen = {isOpen}/>}/>
         <Route path='/login' element={<LoginScreen/>}/>
 
         <Route element={<ProtectedRoutes/>}>
-          <Route path='/cart' element={<Cart/>} />
-          <Route path='/purchases' element={<Purchases/>} />
+           {/* <Route path='/cart' element={<Cart/>} />  */}
+          <Route path='/purchases' element={<Purchases isOpen={isOpen} isDark = {isDark}/>} />
         </Route>
 
       </Routes>

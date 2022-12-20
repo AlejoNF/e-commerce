@@ -2,9 +2,10 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import CardPurchase from '../components/purchases/CardPurchase'
 import getConfig from '../utils/getConfig'
+import Cart from './Cart'
 import './styles/purchases.css'
 
-const Purchases = () => {
+const Purchases = ({isOpen}) => {
 
   const [purchases, setPurchases] = useState()
 
@@ -19,6 +20,9 @@ const Purchases = () => {
 
   return (
     <div className='purchases'>
+      <div className={`home__cart ${isOpen ? "home__cart-shown" : '' } `}>
+        <Cart/>
+      </div>
       <h2 className='purchases__title'>My Purchases</h2>
       <div className='purchases__container'>
         {
